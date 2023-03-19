@@ -18,7 +18,6 @@ public class PeopleController {
         this.peopleSearchService = peopleSearchService;
     }
 
-
     @Get("{cpf}")
     public PeopleResponse peopleResponse(@PathVariable String cpf){
         return this.peopleSearchService.searchPeopleByCPF(cpf);
